@@ -1,10 +1,11 @@
+import HeroSection from "@/components/HeroSection";
 
 const HomePage = () => {
   return (
-    <div>
-      Welcome To Genformic
+    <div className="grid items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20">
+      <HeroSection />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

@@ -12,7 +12,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           <Logo />
           <div className="flex items-center">
             <Button variant={"link"}>Dashboard</Button>
-            <UserButton/>
+            <UserButton />
           </div>
         </nav>
       </div>
