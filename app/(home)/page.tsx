@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import PricingPage from "@/components/PricingPage";
+import PricingPage from "@/components/PricingSection";
 
 const HomePage = () => {
   return (
