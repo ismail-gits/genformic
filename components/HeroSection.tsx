@@ -34,12 +34,12 @@ const suggestionBtnText: SuggestionBtnTextType[] = [
   },
   {
     label: "Survey Form",
-    text: "Generate a form to gather survey responses on a specific topic or product."
+    text: "Generate a form to gather survey responses on a specific topic or product.",
   },
   {
     label: "Order Form",
-    text: "Create an order form for customers to purchase products or services online."
-  }
+    text: "Create an order form for customers to purchase products or services online.",
+  },
 ];
 
 const HeroSection = () => {
@@ -58,12 +58,15 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
+
       {/* Create Input Field */}
       <GenerateFormInput />
       <div className="grid grid-cols-4 gap-3">
         {suggestionBtnText.map(
           (suggestion: SuggestionBtnTextType, index: number) => (
-            <Button className="rounded-full h-10" variant={"outline"}>{suggestion.label}</Button>
+            <Button className="rounded-full h-10" variant={"outline"}>
+              {suggestion.label}
+            </Button>
           )
         )}
       </div>

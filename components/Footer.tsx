@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -49,5 +49,5 @@ export const Footer = () => {
         Go to nextjs.org →
       </a>
     </footer>
-  )
-}
+  );
+};
