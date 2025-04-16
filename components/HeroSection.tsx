@@ -1,5 +1,46 @@
 import React from "react";
 import GenerateFormInput from "./GenerateFormInput";
+import { Button } from "./ui/button";
+
+type SuggestionBtnTextType = {
+  label: String;
+  text: String;
+};
+
+const suggestionBtnText: SuggestionBtnTextType[] = [
+  {
+    label: "Job Application Form",
+    text: "Develop a basic job application form that serves as a one-page solution form collecting essential information from applicants.",
+  },
+  {
+    label: "Event Registration Form",
+    text: "Create a form for people to register for an upcoming tech conference.",
+  },
+  {
+    label: "Customer Feedback Form",
+    text: "Generate a feedback form for an online store to collect opinions after purchase.",
+  },
+  {
+    label: "Product Waitlist Form",
+    text: "Build a waitlist form for users interested in a new product launch.",
+  },
+  {
+    label: "Appointment Booking",
+    text: "Create a form to schedule appointments for a clinic or personal service.",
+  },
+  {
+    label: "Contact Us Form",
+    text: "Design a simple contact form for a business website.",
+  },
+  {
+    label: "Survey Form",
+    text: "Generate a form to gather survey responses on a specific topic or product."
+  },
+  {
+    label: "Order Form",
+    text: "Create an order form for customers to purchase products or services online."
+  }
+];
 
 const HeroSection = () => {
   return (
@@ -18,7 +59,14 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Create Input Field */}
-      <GenerateFormInput/>
+      <GenerateFormInput />
+      <div className="grid grid-cols-4 gap-3">
+        {suggestionBtnText.map(
+          (suggestion: SuggestionBtnTextType, index: number) => (
+            <Button className="rounded-full h-10" variant={"outline"}>{suggestion.label}</Button>
+          )
+        )}
+      </div>
     </section>
   );
 };
