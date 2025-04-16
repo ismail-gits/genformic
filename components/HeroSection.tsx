@@ -1,4 +1,5 @@
 import React from "react";
+import GenerateFormInput from "./GenerateFormInput";
 
 const HeroSection = () => {
   return (
@@ -17,6 +18,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Create Input Field */}
+      <GenerateFormInput/>
     </section>
   );
 };
