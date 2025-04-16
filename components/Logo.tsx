@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const Logo = () => {
   return (
-    <div>
-      <h1 className="font-extrabold text-2xl">Genformic</h1>
+    <div className="relative w-32 h-10">
+      <Image alt="Genformic Logo" src={"/Genformic-logo.svg"} fill/>
     </div>
   );
 };
